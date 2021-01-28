@@ -1,13 +1,12 @@
 # MarkAny_Intern
 ------------
 ## Issue
-![isseu](https://user-images.githubusercontent.com/59689327/106101776-baf18d00-6181-11eb-911b-76e849e622e4.PNG)<br>
-
-![Isseu2](https://user-images.githubusercontent.com/59689327/106101782-bc22ba00-6181-11eb-98ae-6bba27633785.PNG)<br>
+<img src="https://user-images.githubusercontent.com/59689327/106101776-baf18d00-6181-11eb-911b-76e849e622e4.PNG" width="40%"><br>
+<img src="https://user-images.githubusercontent.com/59689327/106101782-bc22ba00-6181-11eb-98ae-6bba27633785.PNG" width="40%"><br>
 
  현재 CCTV Object detection 에 가장 많이 활용되고 있는 Yolu 4 에 올라온 Issue이다.<br>
 이 Issue의 내용은 대략적으로 Yolo 4를 이용하여 Object detection 뿐만 아니라, Object Traking까지 가능할 수 있다고 말하고있다.<br>
-이 Issue에 대한 내용을 공부해보자 <
+이 Issue에 대한 내용을 공부해보자.<br>
  
 -----------
 ### 01-28 

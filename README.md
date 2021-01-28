@@ -25,6 +25,6 @@
 [![DeppSort](http://img.youtube.com/vi/bkn6M4LAoHk/0.jpg)](https://www.youtube.com/watch?v=bkn6M4LAoHk&feature=youtu.be) <br>
 Deep Sort Model을 요약하자면 이렇다.<br>
 최근 object detection의 진보로 인해 tracking-by-detection 은 multiple object tracking에서 leading paradigm이 되었다.<br>
-Deep SORT는 이미지 공간에서 Kalman filtering을 수행하고 bounding box overlap을 측정하는 association metric과 함께 Hungarian method를 사용하여 frame-by-frame data association을 수행하는 더 간단한 framework이다.<br>
+Deep SORT는 이미지 공간에서 ``Kalman filtering``을 수행하고 ``bounding box overlap``을 측정하는 association metric과 함께 Hungarian method를 사용하여 frame-by-frame data association을 수행하는 더 간단한 framework이다.<br>
 
-~Kalman filtering~ :잡음이 포함된 측정치를 바탕으로 상태를 추정하는 재귀 필터. 예측, 업데이트의 두단계로 이루어짐. 예측 단계에서 현재 상태 변수의 값과 정확도를 예측하고, 실제 측정값이 들어오면 업데이트 단계에서 차이를 반영해 현재의 상태 변수를 업데이트 한다.<br>
+``Kalman filtering`` :잡음이 포함된 측정치를 바탕으로 상태를 추정하는 재귀 필터. 예측, 업데이트의 두단계로 이루어짐. 예측 단계에서 현재 상태 변수의 값과 정확도를 예측하고, 실제 측정값이 들어오면 업데이트 단계에서 차이를 반영해 현재의 상태 변수를 업데이트 한다.<br>

@@ -7,3 +7,4 @@
  이것이 1에 가까울 수록 두 벡터의 방향은 같아지고,<br>
  -1에 가까워 질수록 두 벡터의 방향은 정반대가 되어진다.<br>
  Cos Simliarity의 수식은 이렇다.
+![코사인 유사도 식](https://user-images.githubusercontent.com/59689327/106098019-a8745500-617b-11eb-8fbd-712295f9dfb9.PNG)

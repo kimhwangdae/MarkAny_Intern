@@ -7,5 +7,6 @@
  이것이 1에 가까울 수록 두 벡터의 방향은 같아지고,<br>
  -1에 가까워 질수록 두 벡터의 방향은 정반대가 되어진다.<br>
  Cos Simliarity의 수식과 Cos Simliarity의 결과에 따른 방향은 이렇다.<br>
-![코사인 유사도 식](https://user-images.githubusercontent.com/59689327/106098019-a8745500-617b-11eb-8fbd-712295f9dfb9.PNG)
-![코사인 유사도 그래프](https://user-images.githubusercontent.com/59689327/106098014-a7432800-617b-11eb-81ae-ca388827af1e.PNG)
+![코사인 유사도 식](https://user-images.githubusercontent.com/59689327/106098019-a8745500-617b-11eb-8fbd-712295f9dfb9.PNG)<br>
+![코사인 유사도 그래프](https://user-images.githubusercontent.com/59689327/106098014-a7432800-617b-11eb-81ae-ca388827af1e.PNG)<br>
+이러한 Cos Simliarity의 개념을 이용하여 객체를 tracking 할 수 있을지 모른다는것이 AlexeyAB/darknet 에 올라온 issues 이다.<br>  

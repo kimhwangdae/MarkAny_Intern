@@ -53,8 +53,8 @@ LSTM 또한 RNN과 비슷한 Chain 구조의 형태를 띄고 있다.<br>
 ![LSTM5](https://user-images.githubusercontent.com/59689327/106249726-142af080-6256-11eb-9013-fa7781d72105.PNG)<br>
 sigmoid layer에서는 0과 1사이의 숫자를 내보내는데, 0에 가까울수록 다음 데이터에 전달되는 정보가 적어지고, 1에 가까울수록 많아진다.<br>
 이 첫번째 GATE에서는 이전의 데이터를 0 ~ 1 사이의 값으로 정해 어떤 정보를 저장하고 버릴것인지 결정하는 역할을 한다.<br>
-![LSTM3](https://user-images.githubusercontent.com/59689327/106249718-12612d00-6256-11eb-8e1d-972ea884838d.PNG)
-![LSTM4](https://user-images.githubusercontent.com/59689327/106249723-13925a00-6256-11eb-82c7-32b395d8d6d5.PNG)
+![LSTM3](https://user-images.githubusercontent.com/59689327/106249718-12612d00-6256-11eb-8e1d-972ea884838d.PNG)<br>
+![LSTM4](https://user-images.githubusercontent.com/59689327/106249723-13925a00-6256-11eb-82c7-32b395d8d6d5.PNG)<br>
 LSTM의 두번째 단계는 새로들어오는 데이터를 어떤 데이터를 cell state에 저장할것인지 에대한 게이트이다.<br>
 첫번째 gate와 마찬가지로 sigmoid layer를 거친뒤에 어떤 값을 업데이트할것인지 정하고, 그다음 tanh layer에서 새로운 후보 값들의 vector를 만든다.(임베딩)<br>
 이후 각 layer에서 만들어진 vector들을 * 연산하여 cell state에 얼마나 업데이트할지 결정하는 scale한 값을 만든다.<br>

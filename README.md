@@ -70,4 +70,20 @@ cos similarity를 구해 두 vector의 방향성을 구하고 이 방향의 차�
 
 -------------------
 ## 02-01
------------------------
+---------------------- 
+### 1. Supervised Contrastive Learning
+
+#### Reference
+[참고](https://arxiv.org/pdf/2004.11362.pdf)
+
+#### Summary
+* 배경
+  * Sumpervised lerning 에서 coross entropy를 사용할 때 단점들이 있다.
+  * Self-supervised learning에서 contrastive learning이 성공적이였다. 
+* 방법
+  * Embedding space에서 같은 class의 sample은 잡아당기고 다른 class의 sample은 밀어내도록 학습하였다.
+  * Contrastive learning에서 대개 single positive sample을 썻던 것을 확장하여 multiple positive samples를 사용하였다.
+* 결과
+  * ResNet-50, ResNet-200에서 SOTA를 달성하였다.
+  * SupContrast를 쓰면 corruption에 robust하고, hyper parameter에 stable 하다.
+ 

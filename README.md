@@ -9,8 +9,8 @@
 이 Issue에 대한 내용을 공부해보자.<br>
  
 -----------
-### 01-28 
-#### 1. Cos Similarity
+## 01-28 
+### 1. Cos Similarity
  먼저, 객체를 tracking 하기위해서는 Cos Similarity를 알아야할 필요가있었다.<br>
  CoS Simliarity란, 두백터의 코사인 백터값을 구하는 것인데,<br>
  이것이 1에 가까울 수록 두 벡터의 방향은 같아지고,<br>
@@ -19,7 +19,7 @@
 ![코사인 유사도 식](https://user-images.githubusercontent.com/59689327/106098019-a8745500-617b-11eb-8fbd-712295f9dfb9.PNG)<br>
 ![코사인 유사도 그래프](https://user-images.githubusercontent.com/59689327/106098014-a7432800-617b-11eb-81ae-ca388827af1e.PNG)<br>
 이러한 Cos Simliarity의 개념을 이용하여 객체를 tracking 할 수 있을지 모른다는것이 AlexeyAB/darknet 에 올라온 issues 이다.<br> 
-#### 2. Deep Sort
+### 2. Deep Sort
  Tracking Model은 이미 존재한다.<br>
  아래 영상은 Deep Sort라는 알고리즘을 이용해 객체를 추적하는 영상이다.<br>
 [![DeppSort](http://img.youtube.com/vi/bkn6M4LAoHk/0.jpg)](https://www.youtube.com/watch?v=bkn6M4LAoHk&feature=youtu.be) <br>
@@ -33,7 +33,7 @@ Deep SORT는 이미지 공간에서 ``Kalman filtering``을 수행하고 boundin
 
 -------------
 ## 01-29
-#### 1.LSTM
+### 1.LSTM
 * RNN<br>
 LSTM을 공부하기전에 RNN에 대해 먼저 공부하고 넘어갈 필요가 있다.<br>
 RNN의 개념은 이렇다. 인간이 생각할때 모든 생각을 밑바닥부터 생각하지 않는다.<br>
@@ -62,6 +62,12 @@ LSTM의 두번째 단계는 새로들어오는 데이터를 어떤 데이터를 
 마지막 세번째 단계는 cell state의 값을 tanh layer를 거치게 하고, 새로운값을 sigmoid layer에 거치게하여 * 연산한 후, 다음 cell state에 전달한다.
 
 이런식으로 LSTM은 시계열 정보를이용할수 있다. 
+### 2.Contrastive loss
+ 우리는 object를 tracking 하기위해서, 이전 object의를 임베딩하고, 현재 object를 임베딩한다.<br>
+ 이 임베딩 값들은 각 object의 feature를 나타내고 있기 때문에, 이 임베딩 vector 값들의 거리를 계산하여 두 vector의 유사도를 알 수 있다. <br>
+ 이 때, vector 방향의 유사도를 사용 한다면 크기를 vector의 크기를 계산하는것보다 좀 더 높은 정확도를 가 질 수 있는데, 이 방법이 앞서 설명한 Cos Similarity 이다. <br>
+cos similarity를 구해 두 vector의 방향성을 구하고 이 방향의 차이만큼의 손실값을 다르게 할당하여 w를 조정한다. 이것이 contreastive loss의 개념이다.<br>
 
-
-
+-------------------
+## 02-01
+-----------------------

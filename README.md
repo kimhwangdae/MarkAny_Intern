@@ -86,4 +86,34 @@ cos similarity를 구해 두 vector의 방향성을 구하고 이 방향의 차�
 * 결과
   * ResNet-50, ResNet-200에서 SOTA를 달성하였다.
   * SupContrast를 쓰면 corruption에 robust하고, hyper parameter에 stable 하다.
+ #### Introduction
+ * Cross-entropy loss
+   * Coross-entropy loss는 현재 분류모델 중에 가장 많이 쓰이는 loss function 이다.
+   * 하지만 nosiy에 약하고, possibility of poormargins(?) 은 성능의 저하로 이끌수있다.
  
+ <강아지 이미지>
+ * Supervised Contrastive Learning
+   * Supervised Contrastive Learning는 Anchor에 대해서 같은 class의 sample은 잡아 당기고, 다른 class의 
+Sample은 밀어도록 학습 (위 Contrastive loss 참조)
+   * self-supervised contrastive learning 방법은 기존의 Anchor을 augmention 하여, pos로 학습하여 들어오는 이미지들을 분류한다.
+   * supervised contrastive는 기존의 Anchor를 augmention 한 것과 class가 지정된 Anchor를 학습하여 들어오는 이미지를 분류하기 때문에 self 보다 정확도가 높다.
+   
+  <두개의 정확도 비교 이미지>
+  
+  #### Self-Supervised Contrastive Loss
+  
+  <이미지>
+
+ * i: anchor, j(i):positive, 나머지: neg
+ * 분자를 키우고 분모를 줄여야 한다.
+ * neg sample이 늘어날수록 성능이 improve 된다.
+ 
+  
+ ####  Representation Learning Framework
+ 
+ * data augmentation module
+ 
+ * encoder network
+ 
+ * projection network
+  

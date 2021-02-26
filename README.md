@@ -118,3 +118,25 @@ Sample은 밀어도록 학습 (위 Contrastive loss 참조)
  
  * projection network
  
+
+-------------------
+## 02-01
+---------------------
+
+### yolo makr tool edit
+#### 변경사항
+* 마우스 휠 조작으로 이전 데이터와 이후 데이터 참조 기능
+* f12 버튼을 누르면 현재 데이터 삭제 가능
+#### 컴파일 방법
+* Windows에서는 Cmake, openCV가 필요하다.
+* yolo mark가 설치되어있는 위치로가서 아래의 코드를 입력한다.
+```shell
+mkdir build
+cd build
+cmake -G "Visual Studio 16 2019" -DOpenCV_DIR="C:\opencv\build"[해당경로] ..
+cmake --build . --config "Release"-j
+```
+### build 방법
+
+* .\build\Release\yolo_mark.exe .\x64\Release\data\img .\x64\Release\data\train.txt .\x64\Release\data\obj.names
+* 위와같이 실행파일 [이미지 경로],[라벨링 텍스트파일 경로],[클레스 텍스트파일 경로]
